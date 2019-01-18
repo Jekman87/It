@@ -1,0 +1,64 @@
+<?php echo $this->doctype(); ?>
+
+<html>
+<head>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headMeta(); ?>
+    <?php echo $this->headLink(); ?>
+    <?php echo $this->headScript(); ?>
+
+</head>
+
+<body>
+
+<div class="tail-top">
+    <div class="tail-bottom">
+        <div class="body-bg">
+            <!-- HEADER -->
+            <div id="header">
+                <div class="extra"><img src="/images/header-img.jpg" alt="" /></div>
+
+                <div class="row-1">
+                    <div class="fleft"><a href="#"><img src="/images/logo.gif" alt="" /></a></div>
+                    <div class="fright"><img src="/images/phone.gif" alt="" /></div>
+                </div>
+
+                <div class="row-2">
+                    <?php echo $this->navigation()->menu(); ?>
+                </div>
+
+                <div class="row-3"><img src="/images/slogan.gif" alt="" /></div>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div id="content">
+                <div class="tail-right">
+                    <div class="wrapper">
+                        <div class="col-1">
+                            <?php echo $this->layout()->content; ?>
+                        </div>
+
+                        <div class="col-2">
+                            <?php echo $this->events(); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+
+            <div id="footer">
+                <div class="copy">
+                    <?php echo $this->render('copyright.phtml'); ?>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+

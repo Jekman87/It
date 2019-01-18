@@ -1,0 +1,9 @@
+<?php $this->headTitle($this->service['title'], 'PREPEND'); ?>
+
+<?php
+    $this->headMeta()->appendName('keywords', $this->service['keywords'])
+         ->appendName('description', $this->service['description']);
+?>
+
+<h1><?php echo $this->service['title']; ?></h1>
+<?php echo $this->service['text']; ?>

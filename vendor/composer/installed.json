@@ -1,0 +1,92 @@
+[
+    {
+        "name": "wendrowycz/zf1-recaptcha-2",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wendrowycz/zf1-recaptcha-2.git",
+            "reference": "c0f84cf8fc1d1b9c7f98bb61beb9a6bdb8d63292"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wendrowycz/zf1-recaptcha-2/zipball/c0f84cf8fc1d1b9c7f98bb61beb9a6bdb8d63292",
+            "reference": "c0f84cf8fc1d1b9c7f98bb61beb9a6bdb8d63292",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.11",
+            "zendframework/zendframework1": "~1.12"
+        },
+        "time": "2015-03-31T03:24:05+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Smith",
+                "email": "chris@cgsmith.net",
+                "homepage": "http://www.cgsmith.net"
+            }
+        ],
+        "description": "A quick package to assist with using Google reCAPTCHA version 2 with ZF1",
+        "keywords": [
+            "ZF1",
+            "recaptcha",
+            "zend"
+        ]
+    },
+    {
+        "name": "zendframework/zendframework1",
+        "version": "1.12.20",
+        "version_normalized": "1.12.20.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zendframework/zf1.git",
+            "reference": "737ef159654fbbef37cf9af742b2c8f9690c2ece"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/zendframework/zf1/zipball/737ef159654fbbef37cf9af742b2c8f9690c2ece",
+            "reference": "737ef159654fbbef37cf9af742b2c8f9690c2ece",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.11"
+        },
+        "require-dev": {
+            "phpunit/dbunit": "1.3.*",
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2016-09-08T14:50:34+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.12.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Zend_": "library/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "include-path": [
+            "library/"
+        ],
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Zend Framework 1",
+        "homepage": "http://framework.zend.com/",
+        "keywords": [
+            "ZF1",
+            "framework"
+        ],
+        "abandoned": "zendframework/zendframework"
+    }
+]

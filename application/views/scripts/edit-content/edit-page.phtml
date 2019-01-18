@@ -1,0 +1,7 @@
+<?php $this->headScript()->appendFile('/js/tinymce/tinymce.js'); ?>
+    <script>
+        tinymce.init({
+            selector: '#description, #text'
+        });
+    </script>
+<?php echo $this->pageForm; ?>

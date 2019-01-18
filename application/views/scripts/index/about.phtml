@@ -1,0 +1,15 @@
+<?php $this->headTitle('О нас', 'PREPEND'); ?>
+
+<?php
+    $this->headMeta()->appendName('keywords', $this->keywords)
+         ->appendName('description', $this->description);
+?>
+
+<h1>О нашей компании!</h1>
+
+<?php if (Zend_Auth::getInstance()->hasIdentity()): ?>
+    <?php $url = $this->url(array('controller' => 'edit-content', 'action' => 'edit-page', 'id' => '2'), 'default') ?>
+    <p><a href="<?php echo $url; ?>">Редактировать контент</a></p>
+<?php endif; ?>
+
+<?php echo $this->text; ?>

@@ -1,0 +1,12 @@
+<li>
+    <strong><span class="date"><?php echo $this->date; ?></span></strong>
+    <p><?php echo $this->text; ?></p>
+
+    <?php if (Zend_Auth::getInstance()->hasIdentity()): ?>
+        <?php $urlEdit = $this->url(array('controller' => 'edit-content', 'action' => 'edit-event', 'id' => $this->id), 'default'); ?>
+        <?php $urlDelete = $this->url(array('controller' => 'edit-content', 'action' => 'delete-event', 'id' => $this->id), 'default'); ?>
+        <p>
+            <a href="<?php echo $urlEdit; ?>">Редактировать</a> | <a href="<?php echo $urlDelete; ?>">Удалить</a>
+        </p>
+    <?php endif; ?>
+</li>

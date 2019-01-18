@@ -1,0 +1,14 @@
+<?php $classes = array('m1', 'm2', 'm3',' m4'); ?>
+
+<ul class="navigation">
+    <?php foreach ($this->container as $link): ?>
+        <?php $class = array_shift($classes); ?>
+        <li class="<?php echo $link->isActive() ? 'active ' . $class : $class; ?>">
+            <?php if ($link->isActive()): ?>
+                <a class="active" href="<?php echo $link->getHref(); ?>"><?php echo $link->label; ?></a>
+            <?php else: ?>
+                <a href="<?php echo $link->getHref(); ?>"><?php echo $link->label; ?></a>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+</ul>
